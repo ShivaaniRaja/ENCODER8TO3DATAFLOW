@@ -38,19 +38,46 @@ Figure 02  Encoder 8 * 3
 
 /* write all the steps invloved */
 
+1.Open the quartus prime software.
+
+2.Mention th code in new file and compile, select tools- Netlist viewers-RTL viewver.
+
+3.Open new file and select world program UWF for waveform
+
 **PROGRAM**
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
-*/
+Developed by:Shivaani.R
+
+RegisterNumber:24007075*/
+
+module exp5(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+
+input y0,y1,y2,y3,y4,y5,y6,y7;
+
+output a,b,c;
+
+assign a= ( y4 | y5 | y6 | y7);
+
+assign b= ( y2 | y3 | y6 | y7);
+
+assign c= ( y1 | y3 | y5 | y7);
+
+endmodule
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![image](https://github.com/user-attachments/assets/d3c3c058-314d-4038-87ff-5a45d3f3d47d)
+
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+
+![image](https://github.com/user-attachments/assets/f8a34935-85dd-4a6b-8f09-395a9151dc61)
+
 
 **RESULTS**
 
-
+Hence the Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming.
 
 
